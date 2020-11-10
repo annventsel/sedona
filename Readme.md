@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Анна Венцель](https://up.htmlacademy.ru/adaptive/21/user/1240401).
-* Наставник: `Неизвестно`.
+* Наставник: Иван Жарков.
 
 ---
 
