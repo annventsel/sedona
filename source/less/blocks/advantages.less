@@ -12,13 +12,7 @@
   margin: 0;
 }
 
-.advantages__item:nth-child(3),
-.advantages__item:nth-child(4) {
-  padding: 20px;
-}
-
-.advantages__item:first-child,
-.advantages__item:nth-child(2) {
+.advantages__item--blue {
   background-color: @blue;
   color: @white;
 }
@@ -70,4 +64,9 @@
   font-weight: normal;
   line-height: 21px;
   color: @light-black;
+}
+
+.advantages__item--pad {
+  padding: 20px;
+  border-bottom: 1px solid @dark-grey;
 }
