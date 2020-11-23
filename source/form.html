@@ -54,92 +54,92 @@
         них, а также о посещенных вами достопримечательностях</p>
     </section>
 
-    <section class="feedback">
-      <form class="feedback__form" action="form-review" action="/echo" method="post">
-        <fieldset class="feedback__section">
-          <legend class="feedback__section-title">Представьтесь:</legend>
-          <ul class="feedback__section-list1">
-            <li class="feedback__section-list1-item">
-              <label class="feedback__section-list1-label" for="name">Имя*:</label>
-              <input type="text" id="name" name="name" placeholder="Петр">
+    <section class="form">
+      <form class="feedback__wrapper" action="https://echo.htmlacademy.ru/" method="post">
+        <fieldset class="form__fieldset">
+          <legend class="form__fieldset-title">Представьтесь:</legend>
+          <ul class="form__fieldset-list">
+            <li class="form__item">
+              <label class="form__item-label" for="name">Имя*:</label>
+              <input class="form__item-input" type="text" id="name" name="name" placeholder="Петр">
             </li>
-            <li class="feedback__section-list1-item">
-              <label class="feedback__section-list1-label" for="surname">Фамилия*:</label>
-              <input type="text" id="surname" name="surname" placeholder="Иванов">
+            <li class="form__item">
+              <label class="form__item-label" for="surname">Фамилия*:</label>
+              <input class="form__item-input" type="text" id="surname" name="surname" placeholder="Иванов">
             </li>
-            <li class="feedback__section-list1-item">
-              <label class="feedback__section-list1-label" for="middlename">Отчество:</label>
-              <input type="text" id="middlename" name="middlename" placeholder="Александрович">
+            <li class="form__item">
+              <label class="form__item-label" for="middlename">Отчество:</label>
+              <input class="form__item-input" type="text" id="middlename" name="middlename" placeholder="Александрович">
             </li>
           </ul>
         </fieldset>
-        <fieldset class="feedback__section">
-          <legend class="feedback__section-title">Контактная иформация:</legend>
-          <ul class="feedback__section-list2">
-            <li class="feedback__section-list2-item">
-              <label class="feedback__section-list2-label" for="phone">Контактный телефон*:</label>
-              <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+        <fieldset class="form__fieldset">
+          <legend class="form__fieldset-title">Контактная иформация:</legend>
+          <ul class="form__contact-list">
+            <li class="form__contact-item">
+              <label class="form__contact-label" for="phone">Контактный телефон*:</label>
+              <input class="form__contact-input" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
                 placeholder="Введите телефон">
             </li>
-            <li class="feedback__section-list2-item">
-              <label class="feedback__section-list2-label" for="email">Электронная почта*:</label>
-              <input type="email" id="email" name="email" placeholder="Введите e-mail">
+            <li class="form__contact-item">
+              <label class="form__contact-label" for="email">Электронная почта*:</label>
+              <input class="form__contact-input" type="email" id="email" name="email" placeholder="Введите e-mail">
             </li>
           </ul>
         </fieldset>
-        <fieldset class="feedback__section">
-          <legend class="feedback__section-title">Ваше общее впечатление:</legend>
-          <ul class="feedback__section-list3">
-            <li class="feedback__section-list3-item">
-              <input class="visually-hidden feedback__section-impression-input" type="radio" name="feedback"
+        <fieldset class="form__fieldset">
+          <legend class="form__fieldset-title">Ваше общее впечатление:</legend>
+          <ul class="form__radio-list">
+            <li class="form__radio-item">
+              <input class="visually-hidden form__radio-input" type="radio" name="feedback"
                 value="positive" id="value1" checked>
-              <label class="feedback__section-radio-label" for="value1">Скорее положительное</label>
+              <label class="form__radio-label" for="value1">Скорее положительное</label>
             </li>
-            <li class="feedback__section-list3-item">
-              <input class="visually-hidden feedback__section-list3-input" type="radio" name="feedback"
+            <li class="form__radio-item">
+              <input class="visually-hidden form__radio-input" type="radio" name="feedback"
                 value="negative" id="value2">
-              <label class="feedback__section-radio-label" for="value2">Скорее отрицательное</label>
+              <label class="form__radio-label" for="value2">Скорее отрицательное</label>
             </li>
-            <li class="feedback__section-list3-item">
-              <input class="visually-hidden feedback__section-list3-input" type="radio" name="feedback"
+            <li class="form__radio-item">
+              <input class="visually-hidden form__radio-input" type="radio" name="feedback"
                 value="noanswer" id="value3">
-              <label class="feedback__section-radio-label" for="value3">Затрудняюсь ответить</label>
+              <label class="form__radio-label" for="value3">Затрудняюсь ответить</label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="feedback__section">
-          <legend class="feedback__section-title">Посещенные достопримечательности:</legend>
-          <ul class="feedback__section-sights">
-            <li class="feedback__section-sights-cheсkbox">
-              <input class="visually-hidden feedback__section-sights-input" type="checkbox" name="bridge" id="sight1"
+        <fieldset class="form__fieldset">
+          <legend class="form__fieldset-title">Посещенные достопримечательности:</legend>
+          <ul class="form__checkbox-list">
+            <li class="form__checkbox-item">
+              <input class="visually-hidden form__checkbox-input" type="checkbox" name="bridge" id="sight1"
                 checked>
-              <label class="feedback__section-checkbox-label" for="sight1">Мост Дьявола</label>
+              <label class="form__checkbox-label" for="sight1">Мост Дьявола</label>
             </li>
-            <li class="filter-option filter-cheсkbox">
-              <input class="visually-hidden feedback__section-sights-input" type="checkbox" name="mountain" id="sight2"
+            <li class="form__checkbox-item">
+              <input class="visually-hidden form__checkbox-input" type="checkbox" name="mountain" id="sight2"
                 checked>
-              <label class="feedback__section-checkbox-label" for="sight2">Гора-Колокол</label>
+              <label class="form__checkbox-label" for="sight2">Гора-Колокол</label>
             </li>
-            <li class="filter-option filter-cheсkbox">
-              <input class="visually-hidden feedback__section-sights-input" type="checkbox" name="park" id="sight3"
+            <li class="form__checkbox-item">
+              <input class="visually-hidden form__checkbox-input" type="checkbox" name="park" id="sight3"
                 checked>
-              <label class="feedback__section-checkbox-label" for="sight3">Слайд-парк</label>
+              <label class="form__checkbox-label" for="sight3">Слайд-парк</label>
             </li>
-            <li class="filter-option filter-cheсkbox">
-              <input class="visually-hidden feedback__section-sights-input" type="checkbox" name="rocks" id="sight4">
-              <label class="feedback__section-checkbox-label" for="sight4">Красные скалы</label>
+            <li class="form__checkbox-item">
+              <input class="visually-hidden form__checkbox-input" type="checkbox" name="rocks" id="sight4">
+              <label class="form__checkbox-label" for="sight4">Красные скалы</label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="feedback__section">
-          <legend class="feedback__section-title">Опишите свои эмоции:</legend>
-          <div class="feedback__section-info">
-            <label class="feedback__section-info-letter" for="feedback-letter"></label>
-            <textarea class="feedback__section-info-input" name="letter" id="feedback-letter"
+        <fieldset class="form__fieldset">
+          <legend class="form__fieldset-title">Опишите свои эмоции:</legend>
+          <div class="form__info">
+            <label class="form__info-label" for="feedback-letter"></label>
+            <textarea class="form__info-text" name="letter" id="feedback-letter"
               placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
         </fieldset>
-        <a class="button button--blue feedback__button" href="#">Отправить отзыв</a>
+        <button type="submit" class="button button--blue form__button">Отправить отзыв</button>
       </form>
     </section>
   </main>
@@ -147,20 +147,20 @@
   <footer class="page-footer">
     <div class="page-footer__item">
       <p class="page-footer__hashtag">#visitsedona</p>
-      <ul class="page-footer__social-links">
-        <li class="page-footer__social-links-item">
-          <a class="button button__blue page-footer__social-links-button" href="https://www.twitter.com" aria-label="Twitter">
-            <svg class="social-links__icon" width="" height=""></svg>
+      <ul class="page-footer__social">
+        <li class="page-footer__social-item">
+          <a class="button button__blue page-footer__social-button" href="https://www.twitter.com" aria-label="Twitter">
+            <svg class="page__footer-social-icon" width="" height=""></svg>
           </a>
         </li>
-        <li class="page-footer__social-links-item">
-          <a class="button button__blue page-footer__social-links-button" href="https://www.facebook.com" aria-label="Facebook">
-            <svg class="page__footer-social-links-icon" width="" height=""></svg>
+        <li class="page-footer__social-item">
+          <a class="button button__blue page-footer__social-button" href="https://www.facebook.com" aria-label="Facebook">
+            <svg class="page__footer-social-icon" width="" height=""></svg>
           </a>
         </li>
-        <li class="page-footer__social-links-item">
-          <a class="button button__blue page-footer__social-links-button" href="https://www.youtube.com" aria-label="Youtube">
-            <svg class="page__footer-social-links-icon" width="" height=""></svg>
+        <li class="page-footer__social-item">
+          <a class="button button__blue page-footer__social-button" href="https://www.youtube.com" aria-label="Youtube">
+            <svg class="page__footer-social-icon" width="" height=""></svg>
           </a>
         </li>
       </ul>
