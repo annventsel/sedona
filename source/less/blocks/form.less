@@ -58,8 +58,13 @@
   background-color: @grey-input;
 }
 
+// .form__item-input::placeholder {
+//   color: @black;
+// }
+
 .form__contact-list {
   padding: 0;
+  list-style: none;
 }
 
 .form__contact-label {
@@ -81,12 +86,18 @@
   margin-bottom: 8px;
 }
 
+// .form__contact-input::placeholder {
+//   color: @black;
+//   font-family: "PT Sans";
+// }
+
 .form__radio-list {
   padding: 0;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   color: @black;
+  list-style: none;
 }
 
 .form__radio-item {
@@ -129,6 +140,7 @@
   font-weight: 700;
   line-height: 26px;
   color: @black;
+  list-style: none;
 }
 
 .form__checkbox-item {
@@ -177,6 +189,10 @@
   padding-left: 21px;
   padding-right: 23px;
   border: none;
+}
+
+.form__info-text::placeholder {
+  color: @black;
 }
 
 .form__button {
