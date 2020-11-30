@@ -5,7 +5,8 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -18,22 +19,22 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="index.html">
+            <a class="main-nav__item-link" href="index.html">
               Главная
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="catalog.html">
+            <a class="main-nav__item-link" href="catalog.html">
               Фото и видео
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="form.html">
+            <a class="main-nav__item-link" href="form.html">
               Форма отзыва
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="#">
+            <a class="main-nav__item-link" href="#">
               HTML Academy
             </a>
           </li>
@@ -48,9 +49,9 @@
 
   <main class="page-main">
     <section class="page-response">
-      <h2 class="page-response__header page-response__header--uppercase">Оставьте свой отзыв</h2>
-      <p class="page-response__text page-response__text--uppercase">Помогите нашим отелям стать лучше! оставьте отзыв о
-        них, а также о посещенных вами достопримечательностях</p>
+      <h2 class="page-response__header">Оставьте свой отзыв</h2>
+      <p class="page-response__text">Помогите нашим отелям стать лучше! оставьте&nbspотзыв о
+        них, а также о посещенных&nbspвами <br> достопримечательностях</p>
     </section>
 
     <section class="form">
@@ -59,11 +60,11 @@
           <legend class="form__fieldset-title">Представьтесь:</legend>
           <ul class="form__fieldset-list">
             <li class="form__item">
-              <label class="form__item-label" for="name">Имя*:</label>
+              <label class="form__item-label" for="name">Имя<sup>*</sup>:</label>
               <input class="form__item-input" type="text" id="name" name="name" placeholder="Петр">
             </li>
             <li class="form__item">
-              <label class="form__item-label" for="surname">Фамилия*:</label>
+              <label class="form__item-label" for="surname">Фамилия<sup>*</sup>:</label>
               <input class="form__item-input" type="text" id="surname" name="surname" placeholder="Иванов">
             </li>
             <li class="form__item">
@@ -72,56 +73,56 @@
             </li>
           </ul>
         </fieldset>
+        <hr class="form__line">
         <fieldset class="form__fieldset">
-          <legend class="form__fieldset-title">Контактная иформация:</legend>
+          <legend class="form__fieldset-title">Контактная информация:</legend>
           <ul class="form__contact-list">
             <li class="form__contact-item">
-              <label class="form__contact-label" for="phone">Контактный телефон*:</label>
+              <label class="form__contact-label" for="phone">Контактный телефон<sup>*</sup>:</label>
               <input class="form__contact-input" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
                 placeholder="Введите телефон">
             </li>
             <li class="form__contact-item">
-              <label class="form__contact-label" for="email">Электронная почта*:</label>
+              <label class="form__contact-label" for="email">Электронная почта<sup>*</sup>:</label>
               <input class="form__contact-input" type="email" id="email" name="email" placeholder="Введите e-mail">
             </li>
           </ul>
         </fieldset>
+        <hr class="form__line">
         <fieldset class="form__fieldset">
           <legend class="form__fieldset-title">Ваше общее впечатление:</legend>
           <ul class="form__radio-list">
             <li class="form__radio-item">
-              <input class="visually-hidden form__radio-input" type="radio" name="feedback"
-                value="positive" id="value1" checked>
+              <input class="visually-hidden form__radio-input" type="radio" name="feedback" value="positive" id="value1"
+                checked>
               <label class="form__radio-label" for="value1">Скорее положительное</label>
             </li>
             <li class="form__radio-item">
-              <input class="visually-hidden form__radio-input" type="radio" name="feedback"
-                value="negative" id="value2">
+              <input class="visually-hidden form__radio-input" type="radio" name="feedback" value="negative"
+                id="value2">
               <label class="form__radio-label" for="value2">Скорее отрицательное</label>
             </li>
             <li class="form__radio-item">
-              <input class="visually-hidden form__radio-input" type="radio" name="feedback"
-                value="noanswer" id="value3">
+              <input class="visually-hidden form__radio-input" type="radio" name="feedback" value="noanswer"
+                id="value3">
               <label class="form__radio-label" for="value3">Затрудняюсь ответить</label>
             </li>
           </ul>
         </fieldset>
+        <hr class="form__line">
         <fieldset class="form__fieldset">
           <legend class="form__fieldset-title">Посещенные достопримечательности:</legend>
           <ul class="form__checkbox-list">
             <li class="form__checkbox-item">
-              <input class="visually-hidden form__checkbox-input" type="checkbox" name="bridge" id="sight1"
-                checked>
+              <input class="visually-hidden form__checkbox-input" type="checkbox" name="bridge" id="sight1" checked>
               <label class="form__checkbox-label" for="sight1">Мост Дьявола</label>
             </li>
             <li class="form__checkbox-item">
-              <input class="visually-hidden form__checkbox-input" type="checkbox" name="mountain" id="sight2"
-                checked>
+              <input class="visually-hidden form__checkbox-input" type="checkbox" name="mountain" id="sight2" checked>
               <label class="form__checkbox-label" for="sight2">Гора-Колокол</label>
             </li>
             <li class="form__checkbox-item">
-              <input class="visually-hidden form__checkbox-input" type="checkbox" name="park" id="sight3"
-                checked>
+              <input class="visually-hidden form__checkbox-input" type="checkbox" name="park" id="sight3" checked>
               <label class="form__checkbox-label" for="sight3">Слайд-парк</label>
             </li>
             <li class="form__checkbox-item">
@@ -130,6 +131,7 @@
             </li>
           </ul>
         </fieldset>
+        <hr class="form__line">
         <fieldset class="form__fieldset">
           <legend class="form__fieldset-title">Опишите свои эмоции:</legend>
           <div class="form__info">
@@ -138,7 +140,7 @@
               placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
         </fieldset>
-        <button type="submit" class="button button--blue form__button">Отправить отзыв</button>
+        <button type="submit" class="button form__button">Отправить отзыв</button>
       </form>
     </section>
   </main>
@@ -153,8 +155,7 @@
           </a>
         </li>
         <li class="social__item">
-          <a class="social__button" href="https://www.facebook.com"
-            aria-label="Facebook">
+          <a class="social__button" href="https://www.facebook.com" aria-label="Facebook">
             <svg class="social__icon" width="" height=""></svg>
           </a>
         </li>
@@ -165,13 +166,13 @@
         </li>
       </ul>
     </div>
-      <div class="page-footer__item copyright">
-        <p class="copyright__text">Разработано</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg class="copyright__icon" width="" height="">
-          </svg>
-        </a>
-      </div>
+    <div class="page-footer__item copyright">
+      <p class="copyright__text">Разработано</p>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <svg class="copyright__icon" width="" height="">
+        </svg>
+      </a>
+    </div>
   </footer>
 
 </body>
