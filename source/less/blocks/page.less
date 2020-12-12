@@ -1,19 +1,39 @@
 .page {
-  height: 100%;
+  min-width: 320px;
+  width: 100%;
   font-size: 18px;
-  font-family: "PT Sans", "Arial", sans-serif;
   line-height: 26px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .page__body {
+  margin: 0;
+  padding: 0;
+  background-color: @grey-background;
+  color: @black;
+}
+
+.page__body-wrapper {
+  overflow: hidden;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: center;
-  min-width: 320px;
-  width: 100%;
   min-height: 100%;
+  width: 320px;
   margin: 0 auto;
-  // padding: 0;
-  background-color: @white;
-  color: @black;
+}
+
+@media (min-width: @tablet-width) {
+  .page__body-wrapper {
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page__body-wrapper {
+    width: 1200px;
+    padding: 0 40px;
+  }
 }
