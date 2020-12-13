@@ -1,7 +1,7 @@
 .page-response {
   text-align: center;
   text-transform: uppercase;
-  padding: 0 25px;
+  padding: 0 23px;
 }
 
 .page-response__header--uppercase {
@@ -20,4 +20,23 @@
   line-height: 24px;
   border-bottom: 1px solid @light-grey;
   padding-bottom: 16px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-response {
+    width: 768px;
+    padding: 28px 85px 40px;
+  }
+
+  .page-response__text {
+    padding: 0 80px;
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-response {
+    width: 1120px;
+    padding: 28px 258px 40px;
+  }
 }

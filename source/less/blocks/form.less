@@ -135,12 +135,12 @@
 }
 
 .form__checkbox-list {
-  padding: 0;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   color: @black;
   list-style: none;
+  padding: 0;
 }
 
 .form__checkbox-item {
@@ -157,7 +157,7 @@
     content: "";
     position: absolute;
     top: -15px;
-    left: -66px;
+    left: -80px;
     width: 56px;
     height: 56px;
     background-image: url("../../img/tick.svg");
@@ -169,7 +169,7 @@
     content: "";
     position: absolute;
     top: -15px;
-    left: -66px;
+    left: -80px;
     width: 56px;
     height: 56px;
     background-image: url("../../img/layer.svg");
@@ -200,4 +200,107 @@
   min-height: 58px;
   margin-top: 51px;
   margin-bottom: 76px;
+}
+
+@media (min-width: @tablet-width) {
+  .form {
+    padding: 0 60px;
+  }
+
+  .form__line {
+    display: none;
+  }
+
+  .form__wrapper {
+    display: grid;
+    grid-template-columns: 40% 35%;
+  }
+
+  .form__fieldset:first-child {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .form__fieldset:nth-child(5) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .form__fieldset:nth-child(3) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .form__fieldset:nth-child(9) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    width: 648px;
+  }
+
+
+  .form__fieldset-title {
+    width: 308px;
+  }
+
+  .form__checkbox-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 575px;
+    justify-content: space-between;
+    padding-left: 80px;
+  }
+
+  .form__button {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    width: 324px;
+    height: 58px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form {
+    padding: 0 80px;
+  }
+
+  .form__wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .form__contact-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__contact-item {
+    width: 400px;
+  }
+
+  .form__fieldset:nth-child(7) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .form__checkbox-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    width: 100%;
+  }
+
+  .form__fieldset:nth-child(9) {
+    width: 960px;
+  }
+
+  .form__button {
+    width: 480px;
+  }
 }
