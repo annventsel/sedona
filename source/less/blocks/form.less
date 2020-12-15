@@ -8,6 +8,7 @@
 .form__fieldset {
   border: none;
   padding: 0;
+  margin: 0;
 }
 
 .form__fieldset-title {
@@ -20,13 +21,6 @@
   padding-bottom: 25px;
 }
 
-.form__line {
-  height: 1px;
-  width: 100%;
-  background-color: @grey-border;
-  border: none;
-  margin-top: 25px;
-}
 
 .form__fieldset-list {
   padding: 0;
@@ -204,16 +198,13 @@
 
 @media (min-width: @tablet-width) {
   .form {
-    padding: 0 60px;
-  }
-
-  .form__line {
-    display: none;
+    padding: 0;
   }
 
   .form__wrapper {
     display: grid;
-    grid-template-columns: 40% 35%;
+    grid-template-columns: 50% 50%;
+    padding: 0 60px;
   }
 
   .form__fieldset:first-child {
@@ -221,39 +212,47 @@
     grid-column-end: 3;
   }
 
-  .form__fieldset:nth-child(5) {
+  .form__fieldset:nth-child(3) {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
   }
 
-  .form__fieldset:nth-child(3) {
+  .form__radio-list {
+    margin: 30px 0;
+  }
+
+  .form__fieldset:nth-child(2) {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
   }
 
-  .form__fieldset:nth-child(9) {
+  .form__fieldset:nth-child(4) {
     grid-column-start: 1;
     grid-column-end: 3;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    width: 648px;
-  }
-
-
-  .form__fieldset-title {
-    width: 308px;
   }
 
   .form__checkbox-list {
     display: flex;
     flex-wrap: wrap;
-    width: 575px;
+    margin: 0 100px;
     justify-content: space-between;
-    padding-left: 80px;
+    padding-top: 48px;
+  }
+
+  .form__checkbox-item {
+    width: 50%;
+    padding-bottom: 35px;
+  }
+
+  .form__fieldset:nth-child(5) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
   }
 
   .form__button {
@@ -266,7 +265,7 @@
 
 @media (min-width: @desktop-width) {
   .form {
-    padding: 0 80px;
+    padding: 0 120px;
   }
 
   .form__wrapper {
@@ -283,7 +282,7 @@
     width: 400px;
   }
 
-  .form__fieldset:nth-child(7) {
+  .form__fieldset:nth-child(4) {
     grid-column-start: 1;
     grid-column-end: 3;
   }
@@ -296,8 +295,8 @@
     width: 100%;
   }
 
-  .form__fieldset:nth-child(9) {
-    width: 960px;
+  .form__fieldset:nth-child(5) {
+    width: 100%;
   }
 
   .form__button {
