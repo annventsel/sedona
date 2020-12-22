@@ -13,6 +13,11 @@
 
 .advantages__item:first-child {
   padding-bottom: 26px;
+  background-image: url("../../img/advantages-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: 50% top;
+  background-size: 384px 36px;
+  padding-top: 36px;
 }
 
 .advantages__item--blue {
@@ -24,7 +29,7 @@
   font-size: 18px;
   line-height: 26px;
   padding-top: 34px;
-  padding-bottom: 20px;
+  padding-bottom: 11px;
   margin: 0;
 }
 
@@ -32,13 +37,14 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  margin: 0;
 }
 
 .advantages__item-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  padding: 0 0 35px;
+  padding: 16px 0 40px;
   margin: 0;
 }
 
@@ -52,30 +58,48 @@
 }
 
 .advantages__addition-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 416px;
   list-style: none;
   background-color: @white;
   color: @black;
   text-align: left;
   margin: 0;
-  padding: 0;
+  padding-left: 69px;
 }
 
 .advantages__addition-item {
   position: relative;
-  padding: 35px 11px 26px 69px;
+  line-height: 21px;
+}
+
+.advantages__addition-item:first-child {
+  width: 240px;
+  padding-bottom: 26px;
+  margin-top: 19px;
+}
+
+.advantages__addition-item:nth-child(2) {
+  width: 229px;
+  margin-top: -24px;
+}
+
+.advantages__addition-item:nth-child(3) {
+  width: 210px;
+  padding-bottom: 35px;
 }
 
 .advantages__addition-item-icon {
   position: absolute;
-  top: 27px;
-  left: 20px;
+  top: 10px;
+  left: -51px;
 }
 
 .advantages__addition-item-title {
   font-size: 18px;
-  line-height: 26px;
-  margin: 0;
-  padding-bottom: 20px;
 }
 
 .advantages__addition-item-text {
@@ -83,6 +107,7 @@
   font-weight: normal;
   line-height: 21px;
   color: @light-black;
+  margin: 0;
 }
 
 .advantages__item--border {
@@ -150,7 +175,6 @@
     width: 33%;
     min-height: 256px;
     padding: 29px 0 43px 0;
-    // padding: 30px 20px;
     text-align: center;
   }
 
@@ -173,7 +197,6 @@
   .advantages__addition-item-wrapper {
     margin: 0;
     padding: 140px 12px 20px;
-    // width: 217px;
     min-height: 150px;
   }
 
@@ -191,10 +214,6 @@
     margin: 0;
   }
 
-  br {
-    display: none;
-  }
-
   .advantages__item-picture {
     order: 1;
   }
@@ -203,6 +222,12 @@
     order: 2;
     width: 236px;
   }
+
+  // .advantages__item-title:nth-child(2) {
+  //   margin: 0;
+  //   padding-top: 29px;
+  //   padding-bottom: 3px;
+  // }
 
   .advantages__item-list-grey {
     display: flex;
