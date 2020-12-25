@@ -18,12 +18,31 @@
 }
 
 @media (min-width: @tablet-width) {
+  .slogan {
+    padding: 43px 0 56px;
+  }
+
+  .slogan__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .slogan__title {
     font-size: 21px;
-    margin: -5px;
+    width: 460px;
+    text-align: center;
+    margin: 0 0 28px;
+    padding: 0;
   }
 
   .slogan__text {
-    margin-top: 36px;
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slogan {
+    padding: 56px 0 44px 0;
   }
 }

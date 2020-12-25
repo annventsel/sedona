@@ -11,7 +11,7 @@
 
   <body class="page__body">
     <div class="page__body-wrapper">
-      <header class="page-header">
+    <header class="page-header">
     <nav class="main-nav main-nav--closed">
       <ul class="main-nav__list">
         <li class="main-nav__item">
@@ -38,23 +38,23 @@
       <div class="main-nav__control">
           <button class="main-nav__toggle main-nav__toggle--open" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <!-- <button class="main-nav__toggle main-nav__toggle--close" type="button"><span class="visually-hidden">Открыть меню</span></button> -->
-        </div>
-      </nav>
+      </div>
+    </nav>
       <div class="page-header__logo">
         <a class="page-header__logo-link" href="index.html">
           <picture>
-            <img class="page-header__logo-img" src="img/logotype-mobile.svg" alt="Sedona">
+            <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
-            <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg.svg">
+            <img class="page-header__logo-img" src="img/logotype-mobile.svg" width="102" height="83" alt="Sedona">
           </picture>
         </a>
       </div>
     <div class="page-intro intro">
       <img class="intro__img-sedona" src="img/text-index.svg" alt="Добро пожаловать в Седону" width="460" height="350">
     </div>
-      </header>
+  </header>
 
-      <main class="page-main">
+  <main class="page-main">
     <h1 class="visually-hidden">Седона - лучший город в Аризоне</h1>
     <section class="slogan">
       <div class="slogan__wrapper">
@@ -68,7 +68,7 @@
     <section class="advantages">
       <ol class="advantages__list">
         <li class="advantages__item advantages__item--blue ">
-          <div class="advantages__item-city">
+          <div class="advantages__item advantages__item--decor">
             <h3 class="advantages__item-title">Настоящий городок</h3>
             <p class="advantages__item-number">- №1 -</p>
             <p class="advantages__item-text">Седона не аттракцион для туристов, там течет своя жизнь</p>
@@ -96,8 +96,8 @@
                 <path d="M27.0443 24.1128H25.478V26.0968H27.0443V24.1128Z" fill="#81B3D2"/>
                 <path d="M30.1769 24.1128H28.6106V26.0968H30.1769V24.1128Z" fill="#81B3D2"/>
                 </svg>
-                <h3 class="advantages__addition-item-title">Жилье</h3>
-                <p class="advantages__addition-item-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                <h3 class="advantages__addition-item-title ">Жилье</h3>
+                <p class="advantages__addition-item-text advantages__addition-item-text--placement">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </div>
             </li>
             <li class="advantages__addition-item">
@@ -106,7 +106,7 @@
                   <path d="M30.5778 11.2058H30.527H18.1841C25.0921 7.76156 25.6508 5.58358 25.3968 4.36796C24.8381 2.39259 22.5524 0.873068 20.419 1.68348C17.6254 2.74714 16.8635 6.9005 16.1016 9.88889C15.1365 6.84985 14.2222 3.0004 12.0381 1.02502C11.4286 0.467863 10.5143 -0.0892942 9.14286 0.0120071C7.11111 0.21461 4.21587 2.69649 5.43492 5.48228C6.55238 8.16676 10.2603 9.88888 12.7492 11.2565H1.42222C0.609524 11.2565 0 11.9149 0 12.6747V18.3475C0 19.158 0.660317 19.7658 1.42222 19.7658H1.5746V38H30.527V19.7658H30.5778C31.3905 19.7658 32 19.1073 32 18.3475V12.6747C32 11.8643 31.3397 11.2058 30.5778 11.2058ZM21.2317 2.94975C22.2984 2.79779 23.7206 3.6082 23.873 4.57057C24.0762 5.93813 22.1968 7.2044 21.3333 7.76156C20.0635 8.62262 18.8444 9.07847 17.6762 9.78758C18.0825 7.91351 18.946 3.25365 21.2317 2.94975ZM9.75238 7.91351C8.63492 7.15375 6.50159 5.68488 6.55238 4.01341C6.60317 2.18999 9.44762 0.721116 10.9714 2.08868C12.9016 3.76016 13.8159 7.66026 14.527 10.3954C12.9016 9.58498 11.3778 8.97717 9.75238 7.91351ZM12.7492 36.4805H3.04762V19.7658H12.7492V36.4805ZM12.7492 18.2462H1.52381V12.7253H12.7492V18.2462ZM17.8286 36.4805H14.2222V12.7253H17.8286V36.4805ZM29.0032 36.4805H19.3524V19.7658H29.054V36.4805H29.0032ZM30.4762 18.2462H19.3524V12.7253H30.4762V18.2462Z" fill="#81B3D2"/>
                 </svg>
                 <h3 class="advantages__addition-item-title">Сувениры</h3>
-                <p class="advantages__addition-item-text">Не только китайского, но и местного производства!</p>
+                <p class="advantages__addition-item-text advantages__addition-item-text--suvenir">Не только китайского, <br class="advantages__desktop-break"> но <br class="advantages__break">  и местного производства!</p>
               </div>
               </li>
             <li class="advantages__addition-item">
@@ -120,7 +120,7 @@
                 <path d="M24.1995 6.12866C24.7793 6.12866 25.2493 5.6751 25.2493 5.1156C25.2493 4.5561 24.7793 4.10254 24.1995 4.10254C23.6196 4.10254 23.1496 4.5561 23.1496 5.1156C23.1496 5.6751 23.6196 6.12866 24.1995 6.12866Z" fill="#81B3D2"/>
                 </svg>
                 <h3 class="advantages__addition-item-title">Еда</h3>
-                <p class="advantages__addition-item-text">Всегда заказывайте фирменный&nbsp;бургер, вы не разочаруетесь!
+                <p class="advantages__addition-item-text advantages__addition-item-text--food">Всегда заказывайте фирменный&nbsp;бургер, вы не разочаруетесь!
                 </p>
               </div>
               </li>
@@ -128,32 +128,34 @@
         </li>
         <li class="advantages__item advantages__item--blue">
           <div class="advantages__item-bridge">
-            <h3 class="advantages__item-title">Там есть мост дьявола</h3>
+            <h3 class="advantages__item-title">Там есть мост&nbsp;дьявола</h3>
             <p class="advantages__item-number">- №2 -</p>
-            <p class="advantages__item-text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            <p class="advantages__item-text">Да, по нему можно пройти! <br class="advantages__desktop-break"> Если вы осмелитесь, конечно</p>
             </div>
           <div class="advantages__item-picture">
             <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
               <img class="advantages__image" src="img/photo-bridge-mob.jpg" alt="Прекрасные виды" width="520" height="260">
             </picture>
           </div>
         </li>
-        <li class="advantages__item advantages__item--border advantages__item--grey">
+        <li class="advantages__item advantages__item--grey">
           <ul class="advantages__item-list-grey">
-            <li class="advantages__item-grey">
+            <li class="advantages__item-grey advantages__item--border">
               <h3 class="advantages__item-title">Небольшая площадь</h3>
-              <span class="advantages__item-number">- №3 -</span>
-              <p class="advantages__item-text">Все интересные места находятся очень&nbsp;близко</p>
+              <p class="advantages__item-number">- №3 -</p>
+              <p class="advantages__item-text">Все интересные места находятся очень близко</p>
             </li>
-            <li class="advantages__item-grey">
+            <li class="advantages__item-grey advantages__item--border">
               <h3 class="advantages__item-title">Красивая дорога</h3>
-              <span class="advantages__item-number">- №4 -</span>
-              <p class="advantages__item-text">Ехать в Седону из Лас-Вегаса совсем&nbsp;не&nbsp;скучно!</p>
+              <p class="advantages__item-number">- №4 -</p>
+              <p class="advantages__item-text advantages__item-text--width">Ехать в Седону из Лас-Вегаса совсем не&nbsp;скучно!</p>
             </li>
             <li class="advantages__item-grey">
               <h3 class="advantages__item-title">Мало туристов</h3>
-              <span class="advantages__item-number">- №5 -</span>
-              <p class="advantages__item-text">Большинство едет в гранд каньон и&nbsp;толпится&nbsp;там</p>
+              <p class="advantages__item-number">- №5 -</p>
+              <p class="advantages__item-text advantages__item-text--width">Большинство едет в гранд каньон и толпится там</p>
             </li>
           </ul>
         </li>
@@ -162,22 +164,25 @@
 
     <section class="search-hotel">
       <h2 class="search-hotel__title">Заинтересовались?</h2>
-      <p class="search-hotel__text">Укажите предполагаемые даты <br> поездки, и мы покажем вам лучшие предложения&nbsp;гостиниц в
-        Cедоне</p>
+      <p class="search-hotel__text">Укажите предполагаемые даты поездки,&nbsp; <br class="search-hotel--break"> и мы покажем вам лучшие предложения&nbsp;гостиниц в Cедоне</p>
       <a class="button search-hotel__button" href="#">Найти гостиницу</a>
     </section>
 
     <section class="map">
+      <h2 class="visually-hidden">Карта</h2>
       <div class="map__wrapper">
-        <h2 class="visually-hidden">Карта</h2>
-        <iframe
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+          <img class="map__image" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта Седоны">
+        </picture>
+        <!-- <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d209540.9137885964!2d-111.93522300871273!3d34.85429808917712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sua!4v1605907187875!5m2!1sru!2sua"
           width="320" height="350" style="border:0;" allowfullscreen="" aria-hidden="false"
-          tabindex="0"></iframe>
-        <!-- <img class="map__image" src="https://via.placeholder.com/150x150" alt="Карта Седоны" width="" height=""> -->
+          tabindex="0"></iframe> -->
       </div>
     </section>
-      </main>
+  </main>
 
       <footer class="page-footer">
     <div class="page-footer__item">
