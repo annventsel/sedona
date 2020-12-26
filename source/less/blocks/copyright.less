@@ -1,21 +1,23 @@
+.copyright {
+  display: flex;
+}
+
 .copyright__text {
-  position: relative;
+  font-size: 14px;
+  line-height: 26px;
   margin: 0;
   text-align: center;
+  padding-right: 15px;
+  padding-left: 35px;
 }
-
-.copyright__link {
-  position: absolute;
-}
-
 
 @media (min-width: @tablet-width) {
   .copyright {
-    display: flex;
     justify-content: flex-end;
   }
 
   .copyright__text {
-    padding-right: 36px;
+    margin-right: 0;
+    line-height: 37px;
   }
 }

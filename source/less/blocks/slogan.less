@@ -1,6 +1,6 @@
 .slogan {
   position: relative;
-  padding: 20px 25px 25px;
+  padding: 15px 25px 1px;
   background-color: @white;
   text-transform: uppercase;
 }
@@ -13,6 +13,36 @@
 
 .slogan__text {
   font-size: 14px;
-  margin-top: 25px;
+  margin-top: 28px;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .slogan {
+    padding: 43px 0 56px;
+  }
+
+  .slogan__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slogan__title {
+    font-size: 21px;
+    width: 460px;
+    text-align: center;
+    margin: 0 0 28px;
+    padding: 0;
+  }
+
+  .slogan__text {
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slogan {
+    padding: 56px 0 44px 0;
+  }
 }

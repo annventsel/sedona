@@ -1,5 +1,42 @@
+.intro {
+  min-height: 389px;
+  margin: 0;
+  background-color: @grey-intro;
+  background-image: url("../../img/intro-triangle.svg"), url("../../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% bottom;
+}
+
 .intro__img-sedona {
   position: absolute;
-  // top: 40%;
-  left: 23%;
+  top: 22%;
+  left: 19px;
+  width: 282px;
+}
+
+@media (min-width: @tablet-width) {
+  .intro__img-sedona {
+    top: 15%;
+    left: 20%;
+    width: 461px;
+    height: 350px;
+    // padding-top: 77px;
+  }
+
+  .intro {
+    height: 518px;
+    padding-top: 77px;
+    background-image: url("../../img/back-tablet.jpg");
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .intro__img-sedona {
+    left: 31%;
+  }
+
+  .intro {
+    background-image: url("../../img/intro.jpg");
+  }
 }
