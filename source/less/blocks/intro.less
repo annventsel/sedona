@@ -2,16 +2,18 @@
   min-height: 389px;
   margin: 0;
   background-color: @grey-intro;
-  background-image: url("../../img/intro-triangle.svg"), url("../../img/back-mobile.jpg");
+  background-image: url("../img/intro-triangle.svg"), url("../img/intro-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% bottom;
+  background-size: contain;
 }
 
 @media (min-resolution: 2dppx) {
-  background-image: url("../../img/back-mobile@2x.jpg"), url("../../img/intro-triangle.svg");
-  background-repeat: no-repeat;
-  background-position: 50% bottom;
-  background-size: cover;
+  .intro {
+    background-image: url("../img/intro-triangle.svg"), url("../img/back-mobile@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% bottom;
+  }
 }
 
 .intro__img-sedona {
@@ -32,15 +34,14 @@
   .intro {
     height: 518px;
     padding-top: 77px;
-    background-image: url("../../img/back-tablet.jpg");
-    // background-repeat: no-repeat;
-  }
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../../img/back-tablet@2x.jpg"), url("../../img/intro-triangle-tablet.svg");
+    background-image: url("../img/intro-triangle-tablet.svg"), url("../img/back-tablet.jpg");
     background-repeat: no-repeat;
     background-position: 50% bottom;
-    background-size: cover;
+    background-size: contain;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro-triangle-tablet.svg"), url("../img/back-tablet@2x.jpg");
+    }
   }
 }
 
@@ -50,18 +51,13 @@
   }
 
   .intro {
-    background-image: url("../../img/intro-desktop@1x.jpg");
+    background-image: url("../img/intro-triangle-desktop.svg"), url("../img/intro-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: 50% bottom;
-    background-size: cover;
-  }
+    background-size: contain;
 
-  @media (min-resolution: 2dppx) {
-    .intro {
-      background-image: url("../../img/intro-desktop@2x.jpg");
-      background-repeat: no-repeat;
-      background-position: 50% bottom;
-      background-size: cover;
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro-triangle-desktop.svg"), url("../img/intro-desktop@2x.jpg");
     }
   }
 }
