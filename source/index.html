@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
   <link rel="stylesheet" href="css/style.css">
   </head>
 
@@ -13,6 +12,15 @@
     <div class="page__body-wrapper">
     <header class="page-header">
     <nav class="main-nav main-nav--closed">
+      <div class="page-header__logo">
+        <a class="page-header__logo-link" href="index.html">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+            <img class="page-header__logo-img" src="img/logotype-mobile.svg" width="102" height="83" alt="Sedona">
+          </picture>
+        </a>
+      </div>
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a class="main-nav__item-link" href="index.html">
@@ -37,18 +45,8 @@
       </ul>
       <div class="main-nav__control">
           <button class="main-nav__toggle main-nav__toggle--open" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <!-- <button class="main-nav__toggle main-nav__toggle--close" type="button"><span class="visually-hidden">Открыть меню</span></button> -->
       </div>
     </nav>
-      <div class="page-header__logo">
-        <a class="page-header__logo-link" href="index.html">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
-            <img class="page-header__logo-img" src="img/logotype-mobile.svg" width="102" height="83" alt="Sedona">
-          </picture>
-        </a>
-      </div>
     <div class="page-intro intro">
       <img class="intro__img-sedona" src="img/text-index.svg" alt="Добро пожаловать в Седону" width="460" height="350">
     </div>
@@ -77,7 +75,7 @@
             <picture>
               <source media="(min-width: 1200px)" srcset="img/photo-city-desktop@1x.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-city-tablet@1x.jpg 1x, img/photo-city@2x.jpg 2x">
-              <img class="advantages__img" src="img/photo-city@1x.jpg" alt="Настощий городок">
+              <img class="advantages__img" src="img/photo-city@1x.jpg" srcset="img/photo-city-mob@2x.jpg 2x" alt="Настощий городок" width="520" height="260">
             </picture>
           </div>
           <ul class="advantages__addition-list">
@@ -136,21 +134,21 @@
             <picture>
               <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
-              <img class="advantages__image" src="img/photo-bridge-mob.jpg" alt="Прекрасные виды" width="520" height="260">
+              <img class="advantages__image" src="img/photo-bridge-mob.jpg" srcset="img/photo-bridge-mob@2x.jpg 2x" alt="Прекрасные виды" width="520" height="260">
             </picture>
           </div>
         </li>
         <li class="advantages__item advantages__item--grey">
           <ul class="advantages__item-list-grey">
-            <li class="advantages__item-grey advantages__item--border">
+            <li class="advantages__item-grey">
               <h3 class="advantages__item-title">Небольшая площадь</h3>
               <p class="advantages__item-number">- №3 -</p>
-              <p class="advantages__item-text">Все интересные места находятся очень близко</p>
+              <p class="advantages__item-text advantages__item--border">Все интересные места находятся очень близко</p>
             </li>
-            <li class="advantages__item-grey advantages__item--border">
+            <li class="advantages__item-grey">
               <h3 class="advantages__item-title">Красивая дорога</h3>
               <p class="advantages__item-number">- №4 -</p>
-              <p class="advantages__item-text advantages__item-text--width">Ехать в Седону из Лас-Вегаса совсем не&nbsp;скучно!</p>
+              <p class="advantages__item-text advantages__item-text--width advantages__item--border">Ехать в Седону из Лас-Вегаса совсем не&nbsp;скучно!</p>
             </li>
             <li class="advantages__item-grey">
               <h3 class="advantages__item-title">Мало туристов</h3>
