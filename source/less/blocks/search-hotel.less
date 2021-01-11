@@ -2,7 +2,7 @@
   text-align: center;
   text-transform: uppercase;
   background-color: @white;
-  padding: 19px 20px 0;
+  padding: 34px 20px 0;
 }
 
 .search-hotel__title {
@@ -30,11 +30,24 @@
   margin-top: 29px;
   margin-bottom: 49px;
   padding-top: 14px;
+
+  &:hover {
+    background-color: @blue-hover;
+  }
+
+  &:active {
+    background-color: @blue-active;
+    color: @white-active;
+  }
+
+  &:disabled {
+    background-color: @grey-border;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .search-hotel {
-    padding-top: 54px;
+    padding-top: 69px;
     padding-bottom: 58px;
   }
 

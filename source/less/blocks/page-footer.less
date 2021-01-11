@@ -9,7 +9,11 @@
 }
 
 .page-footer__item {
-  padding: 41px 60px 0;
+  padding: 40px 60px 8px;
+}
+
+.page-footer__item--padding {
+  padding-top: 32px;
 }
 
 .page-footer__social {
@@ -28,12 +32,6 @@
   margin: 0;
   padding-bottom: 33px;
 }
-
-// .page-footer__copyright {
-//   font-size: 14px;
-//   line-height: 26px;
-//   padding-top: 45px;
-// }
 
 @media (min-width: @tablet-width) {
   .page-footer {
@@ -62,11 +60,15 @@
 }
 
 @media (min-width: @desktop-width) {
-  .page-footer {
-    padding: 35px 120px;
+  .page-footer--main {
+    padding: 36px 120px 37px;
   }
 
   .page-footer__item:first-child {
-    width: 560px;
+    width: 564px;
+  }
+
+  .page-footer--padding {
+    padding: 80px 120px 36px;
   }
 }
