@@ -15,9 +15,9 @@
 .video__text {
   font-size: 14px;
   line-height: 24px;
-  padding: 0 70px;
+  padding: 0 40px;
   color: @light-black;
-  margin: 33px 0;
+  margin: 28px 0;
 }
 
 .video__image {
@@ -26,7 +26,7 @@
 
 .video__control-wrapper {
   position: relative;
-  width: 90%;
+  width: 87%;
   min-height: 111px;
   top: -45px;
   left: 20px;
@@ -54,10 +54,10 @@
 
 .video__toggle {
   position: absolute;
-  width: 2.5%;
+  width: 3%;
   min-height: 9px;
   top: 17px;
-  left: 80px;
+  left: 59px;
   background-color: @white;
   background-image: url("/source/img/volume-slider.png");
   background-position: 0 50%;
@@ -68,26 +68,40 @@
 
 .video__control-button {
   position: absolute;
-  top: 60px;
-  left: 25px;
+  top: 64px;
+  left: 19px;
   border: none;
   cursor: pointer;
 }
 
 .video__control-subtitles {
   position: absolute;
-  top: 60px;
-  right: 125px;
+  top: 64px;
+  right: 66px;
   border: none;
   cursor: pointer;
 }
 
 .video__control-wide {
   position: absolute;
-  top: 60px;
-  right: 80px;
+  top: 64px;
+  right: 15px;
   border: none;
   cursor: pointer;
+}
+
+.video__control-icon-subtitles,
+.video__control-icon,
+.video__control-icon-wide {
+  fill: @subtitles;
+
+  &:hover {
+    fill: @light-black;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -98,7 +112,7 @@
 
   .video__control-wrapper {
     width: 100%;
-    height: 93px;
+    min-height: 35px;
     background-color: transparent;
     top: -52px;
     left: 0;
@@ -109,38 +123,73 @@
     margin: 0 auto;
   }
 
+  .video__text {
+    padding: 0 93px;
+    margin-bottom: 81px;
+  }
+
+  .video__bar {
+    min-height: 93px;
+    top: -46px;
+  }
+
   .video__strip {
-    width: 67%;
-    left: 70px;
+    width: 60%;
+    top: 48%;
+    left: 92px;
   }
 
   .video__toggle {
     width: 1.5%;
-    left: 265px;
+    top: 45%;
+    left: 206px;
   }
 
   .video__control-button {
-    top: 10px;
+    top: -11px;
+    left: 30px;
+    background-color: transparent;
   }
 
   .video__control-subtitles {
-    top: 12px;
-    right: 72px;
+    top: -11px;
+    right: 87px;
+    background-color: transparent;
   }
 
   .video__control-wide {
-    top: 12px;
-    right: 20px;
+    top: -11px;
+    right: 35px;
+    background-color: transparent;
+  }
+
+  .video__control-icon-subtitles,
+  .video__control-icon,
+  .video__control-icon-wide {
+    fill: @white;
+
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .video {
-    padding: 63px 0 0;
+    padding: 30px 0 0;
   }
 
   .video__item {
     width: 800px;
+  }
+
+  .video__text {
+    padding: 0 173px;
   }
 
   .video__strip {
@@ -149,20 +198,20 @@
 
   .video__toggle {
     width: 1%;
-    left: 235px;
+    left: 205px;
   }
 
   .video__control-button {
-    top: 10px;
+    top: -16px;
   }
 
   .video__control-subtitles {
-    top: 12px;
+    top: -16px;
     right: 88px;
   }
 
   .video__control-wide {
-    top: 12px;
-    right: 30px;
+    top: -16px;
+    right: 37px;
   }
 }

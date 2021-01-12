@@ -1,3 +1,54 @@
 .page-intro {
   position: relative;
+  height: 158px;
+  background-image: url("../img/intro-triangle.svg"), url("../img/form-intro-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% bottom;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/intro-triangle.svg"), url("../img/form-intro-mobile@2x.jpg");
+  }
+}
+
+.page-intro__img-sedona {
+  position: absolute;
+  top: 35%;
+  left: 14%;
+}
+
+@media (min-width: @tablet-width) {
+  .page-intro__img-sedona {
+    width: 457px;
+    height: 78px;
+    top: 32%;
+    left: 20%;
+  }
+
+  .page-intro {
+    height: 290px;
+    background-image: url("../img/form-triangle-tablet.svg"), url("../img/form-intro-tablet@1x.jpg");
+    background-size: auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/form-triangle-tablet.svg"), url("../img/form-intro-tablet@2x.jpg");
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-intro {
+    height: 300px;
+    background-image: url("../img/intro-triangle.desktop.svg"), url("../img/form-intro-desktop@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro-triangle.desktop.svg"), url("../img/form-intro-desktop@2x.jpg");
+    }
+  }
+
+  .page-intro__img-sedona {
+    width: 460px;
+    height: 89px;
+    left: 369px;
+  }
 }
