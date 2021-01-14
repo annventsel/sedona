@@ -60,17 +60,17 @@
   line-height: 26px;
   width: 100%;
   min-width: 100px;
-  padding: 16px;
-  border: none;
+  padding: 15px;
   color: @black;
   background-color: @grey-input;
+  border: 1px solid transparent;
   cursor: pointer;
 
   &:hover {
     background-color: @grey-border;
   }
 
-  &:active {
+  &:focus {
     background-color: @white;
     border: 1px solid @grey-border;
     outline: none;
@@ -89,8 +89,8 @@
 }
 
 .form__contact-item {
-  margin-bottom: 27px;
-  margin-top: 7px;
+  margin-bottom: 28px;
+  margin-top: 5px;
 }
 
 .form__contact-label {
@@ -107,20 +107,20 @@
   font-weight: 700;
   line-height: 26px;
   width: 100%;
-  border: none;
   background-color: @grey-input;
   padding: 21px 92px 13px 22px;
-  margin-top: 3px;
+  margin-top: 2px;
   margin-bottom: -14px;
+  border: 1px solid transparent;
   cursor: pointer;
 
   &:hover {
     background-color: @grey-border;
   }
 
-  &:active {
+  &:focus {
     background-color: @white;
-    border: 1px solid @grey-border;
+    border-color: @grey-border;
     outline: none;
   }
 }
@@ -132,8 +132,8 @@
 .form__contact-button {
   position: absolute;
   border: none;
-  right: 8%;
-  top: 402px;
+  right: 6%;
+  top: 400px;
   width: 58px;
   height: 58px;
 }
@@ -141,7 +141,7 @@
 .form__contact-email {
   position: absolute;
   border: none;
-  right: 8%;
+  right: 6%;
   top: 505px;
   width: 58px;
   height: 58px;
@@ -216,8 +216,12 @@
 }
 
 .form__radio-input:active + .form__radio-label::after {
-  background-color: @light-grey;
   opacity: 0.3;
+}
+
+.form__radio-input:disabled + .form__radio-label::before {
+  opacity: 0.1;
+  cursor: not-allowed;
 }
 
 .form__checkbox-list {
@@ -281,6 +285,11 @@
   opacity: 0.5;
 }
 
+.form__checkbox-input:disabled + .form__checkbox-label::before {
+  opacity: 0.1;
+  cursor: not-allowed;
+}
+
 .form__info-text {
   font-size: 18px;
   font-weight: 700;
@@ -293,16 +302,16 @@
   padding-top: 13px;
   padding-left: 21px;
   padding-right: 23px;
-  border: none;
+  border: 1px solid transparent;
   cursor: pointer;
 
   &:hover {
     background-color: @grey-border;
   }
 
-  &:active {
+  &:focus {
     background-color: @white;
-    border: 1px solid @grey-border;
+    border-color: @grey-border;
     outline: none;
   }
 }
@@ -404,7 +413,6 @@
     flex-wrap: wrap;
     flex-direction: row;
     margin: 0;
-    // justify-content: space-between;
     padding-top: 4px;
   }
 
@@ -504,13 +512,13 @@
   }
 
   .form__contact-button {
-    top: 496px;
-    right: 9%;
+    top: 492px;
+    right: 8%;
   }
 
   .form__contact-email {
-    top: 610px;
-    right: 9%;
+    top: 609px;
+    right: 8%;
   }
 
   .form__endnote {
@@ -561,13 +569,13 @@
   }
 
   .form__contact-button {
-    top: 461px;
-    left: 38%;
+    top: 460px;
+    left: 462px;
   }
 
   .form__contact-email {
-    top: 461px;
-    right: 126px;
+    top: 460px;
+    right: 120px;
   }
 
   .form__contact-label-phone {
@@ -637,6 +645,10 @@
     &::after {
       top: 1px;
       left: -56px;
+    }
+
+    .form__item-input {
+      padding: 15px 13px 15px 17px;
     }
 
     .form__info-text {
