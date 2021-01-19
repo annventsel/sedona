@@ -1,4 +1,12 @@
-// var navMain = document.querySelector(".main-nav"),
-// navToggle = document.querySelector(".main-nav__toggle");
-// navMain.classList.contains("main-nav--closed") || (navToggle.classList.add("main-nav--closed"), navMain.classList.add("main-nav--closed")),
-// navMain.addEventListener("click", function(event) {event.preventDefault(),navToggle.classList.contains("main-nav--closed")?(navToggle.classList.remove("main-nav--closed"),navMain.classList.remove("main-nav--closed")): (navToggle.classList.add("main-nav--closed"),navMain.classList.add("main-nav--closed"))});
+var navMain = document.querySelector('.main-nav');
+var navToggle = document.querySelector('.main-nav__toggle');
+
+navMain.addEventListener('click', function() {
+  if (navMain.classList.contains('main-nav--closed')) {
+    navMain.classList.remove('main-nav--closed');
+    navMain.classList.add('main-nav--opened');
+  } else {
+    navMain.classList.add('main-nav--closed');
+    navMain.classList.remove('main-nav--opened');
+  }
+});
