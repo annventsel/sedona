@@ -32,7 +32,7 @@
 .main-nav--opened .main-nav__toggle {
   top: 0;
   right: auto;
-  left: 280px;
+  left: auto;
 
   &::before,
   &::after {
@@ -43,6 +43,10 @@
     width: 22px;
     height: 4px;
     background-color: @white;
+  }
+
+  &:focus {
+    outline: none;
   }
 
   &::before {
