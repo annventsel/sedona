@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="/fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -75,7 +77,7 @@
   </div>
 <div class="page__body-wrapper">
     <header class="page-header">
-      <nav class="main-nav main-nav--closed">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="page-header__logo">
           <a class="page-header__logo-link" href="index.html">
             <picture>
@@ -199,7 +201,7 @@
             </figcaption>
           </figure>
         </li>
-        <li class="content__item content--border">
+        <li class="content__item content__item--border">
           <figure class="content__figure figure">
             <a href="#">
               <picture>
@@ -244,19 +246,19 @@
         <div class="video__control-wrapper">
           <div class="video__bar">
             <div class="video__strip"></div>
-            <div class="video__toggle"></div>
+            <button class="video__toggle" aria-label="Перемотка видео" type="button"></button>
           </div>
-            <button class="video__control-button" type="button">
+            <button class="video__control-button" aria-label="Повтор" type="button">
               <svg class="video__control-icon" width="16" height="20" viewBox="0 0 16 20" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="#icon-replay"></use>
               </svg>
               </button>
-            <button class="video__control-subtitles" type="button">
+            <button class="video__control-subtitles" aria-label="Включить субтитры" type="button">
               <svg class="video__control-icon-subtitles" width="32" height="20" viewBox="0 0 32 20" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="#icon-subtitles"></use>
               </svg>
             </button>
-            <button class="video__control-wide" type="button">
+            <button class="video__control-wide" aria-label="Развернуть экран" type="button">
               <svg class="video__control-icon-wide" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="#icon-wide"></use>
               </svg>

@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="/fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -74,7 +76,7 @@
   </div>
 <div class="page__body-wrapper">
     <header class="page-header">
-      <nav class="main-nav main-nav--closed">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="page-header__logo">
           <a class="page-header__logo-link" href="index.html">
             <picture>
@@ -143,7 +145,7 @@
           </ul>
         </fieldset>
         <fieldset class="form__fieldset">
-          <legend class="form__fieldset-title form__fieldset--margin"><span class="form__fieldset-title-line">Контактная информация:</span></legend>
+          <legend class="form__fieldset-title form__fieldset-title--margin"><span class="form__fieldset-title-line">Контактная информация:</span></legend>
           <ul class="form__contact-list">
             <li class="form__contact-item">
               <label class="form__contact-label" for="phone"><span class="form__contact-label-phone">Контактный</span> телефон<sup>*</sup>:</label>
@@ -187,7 +189,7 @@
           </ul>
         </fieldset>
         <fieldset class="form__fieldset">
-          <legend class="form__fieldset-title form__fieldset--align"><span class="form__fieldset-title-line">Посещенные достопримечательности:</span></legend>
+          <legend class="form__fieldset-title form__fieldset-title--align"><span class="form__fieldset-title-line">Посещенные достопримечательности:</span></legend>
           <ul class="form__checkbox-list">
             <li class="form__checkbox-item">
               <input class="visually-hidden form__checkbox-input" type="checkbox" name="bridge" id="sight1" checked>
@@ -208,7 +210,7 @@
           </ul>
         </fieldset>
         <fieldset class="form__fieldset">
-          <legend class="form__fieldset-title form__fieldset--align"><span class="form__fieldset-title-line">Опишите свои эмоции:</span></legend>
+          <legend class="form__fieldset-title form__fieldset-title--align"><span class="form__fieldset-title-line">Опишите свои эмоции:</span></legend>
           <div class="form__info">
             <label class="form__info-label" for="feedback-letter"></label>
             <textarea class="form__info-text" name="letter" id="feedback-letter"
